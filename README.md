@@ -1,6 +1,10 @@
 Jupyter notebook extensions
 ===========================
 
+Robin's edit: add `run_imports` extension, to run all code cells that `import` packages: [run_imports](src/jupyter_contrib_nbextensions/nbextensions/run_imports)
+
+===========================
+
 [![Join the chat at https://gitter.im/ipython-contrib/jupyter_contrib_nbextensions](https://img.shields.io/gitter/room/ipython-contrib/jupyter_contrib_nbextensions.svg?maxAge=3600)](https://gitter.im/ipython-contrib/jupyter_contrib_nbextensions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Documentation Status](https://readthedocs.org/projects/jupyter-contrib-nbextensions/badge/?version=latest)](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/)
 [![Documentation Status](https://readthedocs.org/projects/jupyter-contrib-nbextensions/badge/?version=stable)](https://jupyter-contrib-nbextensions.readthedocs.io/en/stable/)

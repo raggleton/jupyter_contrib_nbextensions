@@ -54,10 +54,13 @@ define([
         var selected_snippet = $("select#snippet_picker").find(":selected");
 
         if (selected_snippet.attr("name") != 'header') {
+            // add snippet to current cell
+            var cell = Jupyter.notebook.get_selected_cell();
+            var cell_text = cell.get_text();
             var code = selected_snippet.attr("code");
-            var new_cell = Jupyter.notebook.insert_cell_above('code');
-            new_cell.set_text(code);
-            new_cell.focus_cell();
+            cell_text = cell_text + "\n" + code;
+            cell.set_text(cell_text);
+            cell.focus_cell();
 
             $("option#snippet_header").prop("selected",true);
         }
